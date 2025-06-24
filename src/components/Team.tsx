@@ -15,13 +15,13 @@ const Team = () => {
     {
       name: "Beatriz Silva",
       role: "Colorista Especialista",
-      image: "public/lovable-uploads/funcionaria2.jpg",
+      image: "/lovable-uploads/funcionaria2.jpg",
       description: "Especialista em coloração e técnicas de mechas modernas"
     },
     {
       name: "Carla Rodrigues",
       role: "Cabeleireira Senior",
-      image: "public/lovable-uploads/funcionaria3.jpg",
+      image: "/lovable-uploads/funcionaria3.jpg",
       description: "Cortes modernos e tratamentos capilares avançados"
     }
   ];
