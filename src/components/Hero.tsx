@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden pt-16 md:pt-0">
+    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden pt-20 md:pt-24 lg:pt-0">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -26,7 +26,7 @@ const Hero = () => {
           <div className={`text-white transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 md:mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4 md:mb-6">
               BEAUTY &<br />
               <span className="text-rose-400">HAIR SALON</span>
             </h1>
