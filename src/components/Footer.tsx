@@ -14,12 +14,12 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-rose-400">Ayesha</h3>
+            <h3 className="text-2xl font-bold mb-4 text-rose-400">Rosangêla Rocha</h3>
             <p className="text-gray-300 mb-4">
               Salão de beleza especializado em transformar seu visual com carinho e profissionalismo.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-rose-400 transition-colors">
+              <a href="https://www.instagram.com/rosangelarochamakeup?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-gray-300 hover:text-rose-400 transition-colors">
                 <Instagram size={20} />
               </a>
               <a href="#" className="text-gray-300 hover:text-rose-400 transition-colors">
@@ -87,15 +87,25 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <MapPin size={16} className="mr-2 text-rose-400" />
-                <span>São Paulo, SP</span>
+                <span>Taguatinga, DF</span>
               </div>
             </div>
+             <div className="mt-4">
+                    <a 
+                      href="https://www.google.com/maps/place/Studio+Ros%C3%A2ngela+Rocha/@-15.8247409,-48.0897011,17z/data=!3m1!4b1!4m6!3m5!1s0x935bcdc9bd9bdf09:0x2b92ba03dc5d0d9f!8m2!3d-15.8247409!4d-48.0897011!16s%2Fg%2F11khbc_rhd?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-yellow-500 hover:text-yellow-400 font-medium text-sm underline"
+                    >
+                      Ver no Google Maps →
+                    </a>
+                  </div>
           </div>
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-300 flex items-center justify-center">
-            © 2024 Ayesha Hair Salon. Feito com 
+            © 2025 Studio Rosangela Rocha. Feito com 
             <Heart className="mx-1 text-rose-400" size={16} /> 
             para você.
           </p>

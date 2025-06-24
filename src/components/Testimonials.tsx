@@ -6,15 +6,15 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      image: "/lovable-uploads/ae3c6606-e558-46b2-af2f-836aa233c0b7.png",
+      image: "/lovable-uploads/Capturar.PNG",
       alt: "Avaliação do Google - Maria Silva"
     },
     {
-      image: "/lovable-uploads/ae3c6606-e558-46b2-af2f-836aa233c0b7.png", 
+      image: "/lovable-uploads/Capturar1.PNG", 
       alt: "Avaliação do Google - Fernanda Costa"
     },
     {
-      image: "/lovable-uploads/ae3c6606-e558-46b2-af2f-836aa233c0b7.png",
+      image: "/lovable-uploads/Capturar2.PNG",
       alt: "Avaliação do Google - Juliana Santos"
     }
   ];

@@ -40,7 +40,7 @@ const Contact = () => {
                   <MapPin className="mr-4 flex-shrink-0" size={24} />
                   <div>
                     <p className="font-semibold">Endereço</p>
-                    <p>Rua das Flores, 123 - Centro<br />São Paulo, SP</p>
+                    <p>St. L Norte QNL 22 via 29 lote 42 loja 01 - Taguatinga, Brasília - DF, 72161-204<br />Taguatinga -DF</p>
                   </div>
                 </div>
                 
@@ -56,7 +56,7 @@ const Contact = () => {
                   <Mail className="mr-4 flex-shrink-0" size={24} />
                   <div>
                     <p className="font-semibold">E-mail</p>
-                    <p>contato@ayeshahair.com.br</p>
+                    <p>contato@rosangelarocha.com.br</p>
                   </div>
                 </div>
               </div>

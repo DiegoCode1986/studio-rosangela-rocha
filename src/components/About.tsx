@@ -13,7 +13,7 @@ const About = () => {
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
             <img 
-              src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              src="\lovable-uploads\cadeiras.jpg"
               alt="Interior do salão"
               className="rounded-lg shadow-xl w-full h-[400px] object-cover"
             />
@@ -24,11 +24,11 @@ const About = () => {
           }`}>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               BEM-VINDAS AO<br />
-              <span className="text-rose-600">AYESHA HAIR SALON</span>
+              <span className="text-rose-600">STUDIO ROSANGÊLA ROCHA</span>
             </h2>
             
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Salão de beleza especializado no atendimento a noivas, madrinhas, debutantes e etc... 
+              Salão de beleza especializado no atendimento a noivas, madrinhas, debutantes e muitos mais. 
               Aqui você pode contar com excelentes profissionais treinados e capacitados em cortes, 
               escovas, químicas, mechas, unhas, sobrancelhas, maquiagens e penteados.
             </p>

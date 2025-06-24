@@ -9,19 +9,19 @@ const Team = () => {
     {
       name: "Ana Martins",
       role: "Especialista em Noivas",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b742?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
+      image: "/lovable-uploads/funcionaria1.jpg",
       description: "10 anos de experiência em penteados e maquiagem para noivas"
     },
     {
       name: "Beatriz Silva",
       role: "Colorista Especialista",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      image: "public/lovable-uploads/funcionaria2.jpg",
       description: "Especialista em coloração e técnicas de mechas modernas"
     },
     {
       name: "Carla Rodrigues",
       role: "Cabeleireira Senior",
-      image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
+      image: "public/lovable-uploads/funcionaria3.jpg",
       description: "Cortes modernos e tratamentos capilares avançados"
     }
   ];

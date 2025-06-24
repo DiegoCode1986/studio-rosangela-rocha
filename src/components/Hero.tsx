@@ -17,7 +17,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/lovable-uploads/banner_preto3.jpg")`
         }}
       />
       
@@ -27,8 +27,8 @@ const Hero = () => {
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4 md:mb-6">
-              BEAUTY &<br />
-              <span className="text-rose-400">HAIR SALON</span>
+              Studio<br />
+              <span className="text-rose-400">Rosangêla Rocha</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-6 md:mb-8 text-gray-200 max-w-md">
               Transforme seu visual com nossos especialistas. Cortes, escovas, químicas, 
@@ -47,7 +47,7 @@ const Hero = () => {
           }`}>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80"
+                src="\lovable-uploads\fotoo.jpg"
                 alt="Modelo com cabelo elegante"
                 className="rounded-lg shadow-2xl w-full h-[400px] md:h-[500px] object-cover"
               />

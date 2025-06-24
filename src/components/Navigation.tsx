@@ -31,7 +31,11 @@ const Navigation = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-white">Ayesha</h1>
+               <img
+            src="/lovable-uploads/banner_escura_logo.png" // Caminho para sua imagem
+            alt="Logo Studio Rosangêla" // Texto alternativo importante para acessibilidade e SEO
+            className="h-20 w-30" // Adicione classes para controlar tamanho, se necessário
+          />
             </div>
             
             <div className="hidden md:block">
@@ -126,7 +130,7 @@ const Navigation = () => {
           </div>
           <div className="flex items-center space-x-2">
             <MapPin size={16} className="text-rose-400" />
-            <span>São Paulo, SP</span>
+            <span>Taguatinga, DF</span>
           </div>
         </div>
       </div>
