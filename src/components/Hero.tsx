@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden pt-16 md:pt-0">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -22,21 +22,21 @@ const Hero = () => {
       />
       
       <div ref={ref} className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className={`text-white transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 md:mb-6">
               BEAUTY &<br />
               <span className="text-rose-400">HAIR SALON</span>
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-gray-200 max-w-md">
+            <p className="text-base md:text-lg lg:text-xl mb-6 md:mb-8 text-gray-200 max-w-md">
               Transforme seu visual com nossos especialistas. Cortes, escovas, químicas, 
               mechas, unhas, sobrancelhas, maquiagem e penteados.
             </p>
             <Button 
               onClick={() => scrollToSection('servicos')}
-              className="bg-rose-600 hover:bg-rose-700 text-white px-8 py-3 text-lg rounded-md transition-all duration-300 transform hover:scale-105"
+              className="bg-rose-600 hover:bg-rose-700 text-white px-6 md:px-8 py-2 md:py-3 text-base md:text-lg rounded-md transition-all duration-300 transform hover:scale-105"
             >
               NOSSOS SERVIÇOS
             </Button>
@@ -49,10 +49,10 @@ const Hero = () => {
               <img 
                 src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80"
                 alt="Modelo com cabelo elegante"
-                className="rounded-lg shadow-2xl w-full h-[500px] object-cover"
+                className="rounded-lg shadow-2xl w-full h-[400px] md:h-[500px] object-cover"
               />
-              <div className="absolute -bottom-6 -left-6 bg-rose-600 text-white p-6 rounded-lg shadow-xl">
-                <h3 className="text-xl font-bold mb-2">Especialistas</h3>
+              <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-6 bg-rose-600 text-white p-4 md:p-6 rounded-lg shadow-xl">
+                <h3 className="text-lg md:text-xl font-bold mb-2">Especialistas</h3>
                 <p className="text-sm">Em noivas e debutantes</p>
               </div>
             </div>
