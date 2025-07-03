@@ -47,7 +47,7 @@ const Hero = () => {
           }`}>
             <div className="relative">
               <img 
-                src="\lovable-uploads\fotoo.jpg"
+                src="\lovable-uploads\rosagela.jpeg"
                 alt="Modelo com cabelo elegante"
                 className="rounded-lg shadow-2xl w-full h-[400px] md:h-[500px] object-cover"
               />

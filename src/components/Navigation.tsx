@@ -32,9 +32,9 @@ const Navigation = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
                <img
-            src="/lovable-uploads/banner_escura_logo.png" // Caminho para sua imagem
+            src="/lovable-uploads/so_logo.jpeg" // Caminho para sua imagem
             alt="Logo Studio Rosangêla" // Texto alternativo importante para acessibilidade e SEO
-            className="h-20 w-30" // Adicione classes para controlar tamanho, se necessário
+            className="h-10 w-30" // Adicione classes para controlar tamanho, se necessário
           />
             </div>
             
