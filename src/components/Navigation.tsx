@@ -15,6 +15,18 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -22,6 +34,16 @@ const Navigation = () => {
       setIsOpen(false);
     }
   };
+
+  const menuItems = [
+    { name: 'Início', id: 'inicio' },
+    { name: 'Sobre', id: 'sobre' },
+    { name: 'Serviços', id: 'servicos' },
+    { name: 'Cursos', id: 'cursos' },
+    { name: 'Galeria', id: 'galeria' },
+    { name: 'Equipe', id: 'equipe' },
+    { name: 'Contato', id: 'contato' }
+  ];
 
   return (
     <>
@@ -32,9 +54,9 @@ const Navigation = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
                <img
-            src="/lovable-uploads/so_logo.jpeg" // Caminho para sua imagem
-            alt="Logo Studio Rosangêla" // Texto alternativo importante para acessibilidade e SEO
-            className="h-10 w-30" // Adicione classes para controlar tamanho, se necessário
+            src="/lovable-uploads/so_logo.jpeg"
+            alt="Logo Studio Rosangêla"
+            className="h-10 w-30"
           />
             </div>
             
@@ -42,31 +64,43 @@ const Navigation = () => {
               <div className="ml-10 flex items-baseline space-x-8">
                 <button 
                   onClick={() => scrollToSection('inicio')}
-                  className="text-white hover:text-rose-400 transition-colors duration-300"
+                  className="text-white hover:text-pink-400 transition-colors duration-300"
                 >
                   Início
                 </button>
                 <button 
                   onClick={() => scrollToSection('sobre')}
-                  className="text-white hover:text-rose-400 transition-colors duration-300"
+                  className="text-white hover:text-pink-400 transition-colors duration-300"
                 >
                   Sobre
                 </button>
                 <button 
                   onClick={() => scrollToSection('servicos')}
-                  className="text-white hover:text-rose-400 transition-colors duration-300"
+                  className="text-white hover:text-pink-400 transition-colors duration-300"
                 >
                   Serviços
                 </button>
                 <button 
+                  onClick={() => scrollToSection('cursos')}
+                  className="text-white hover:text-pink-400 transition-colors duration-300"
+                >
+                  Cursos
+                </button>
+                <button 
+                  onClick={() => scrollToSection('galeria')}
+                  className="text-white hover:text-pink-400 transition-colors duration-300"
+                >
+                  Galeria
+                </button>
+                <button 
                   onClick={() => scrollToSection('equipe')}
-                  className="text-white hover:text-rose-400 transition-colors duration-300"
+                  className="text-white hover:text-pink-400 transition-colors duration-300"
                 >
                   Equipe
                 </button>
                 <button 
                   onClick={() => scrollToSection('contato')}
-                  className="bg-rose-600 hover:bg-rose-700 text-white px-6 py-2 rounded-md transition-all duration-300"
+                  className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-md transition-all duration-300"
                 >
                   Contato
                 </button>
@@ -76,7 +110,7 @@ const Navigation = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-white hover:text-rose-400"
+                className="text-white hover:text-pink-400 z-50 relative"
               >
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -84,52 +118,61 @@ const Navigation = () => {
           </div>
         </div>
 
-        {isOpen && (
-          <div className="md:hidden bg-black/95 backdrop-blur-md">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <button 
-                onClick={() => scrollToSection('inicio')}
-                className="block text-white hover:text-rose-400 px-3 py-2 w-full text-left transition-colors duration-300"
-              >
-                Início
-              </button>
-              <button 
-                onClick={() => scrollToSection('sobre')}
-                className="block text-white hover:text-rose-400 px-3 py-2 w-full text-left transition-colors duration-300"
-              >
-                Sobre
-              </button>
-              <button 
-                onClick={() => scrollToSection('servicos')}
-                className="block text-white hover:text-rose-400 px-3 py-2 w-full text-left transition-colors duration-300"
-              >
-                Serviços
-              </button>
-              <button 
-                onClick={() => scrollToSection('equipe')}
-                className="block text-white hover:text-rose-400 px-3 py-2 w-full text-left transition-colors duration-300"
-              >
-                Equipe
-              </button>
-              <button 
-                onClick={() => scrollToSection('contato')}
-                className="block bg-rose-600 hover:bg-rose-700 text-white px-3 py-2 rounded-md mx-3 mt-2 transition-all duration-300"
-              >
-                Contato
-              </button>
+        {/* Full Screen Mobile Menu */}
+        <div className={`md:hidden fixed inset-0 z-40 transition-all duration-500 ${
+          isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`}>
+          <div className="absolute inset-0 bg-gradient-to-br from-pink-900 via-pink-800 to-rose-900 backdrop-blur-lg">
+            <div className="flex flex-col justify-center items-center h-full px-8">
+              <div className="text-center mb-8">
+                <img
+                  src="/lovable-uploads/so_logo.jpeg"
+                  alt="Logo Studio Rosangêla"
+                  className="h-20 w-auto mx-auto mb-4 opacity-80"
+                />
+              </div>
+              
+              <nav className="space-y-6">
+                {menuItems.map((item, index) => (
+                  <button 
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className={`block text-white hover:text-pink-200 text-2xl font-light transition-all duration-300 transform hover:scale-105 ${
+                      isOpen ? 'animate-fade-in-up' : ''
+                    }`}
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
+                    {item.name}
+                  </button>
+                ))}
+              </nav>
+              
+              <div className={`mt-12 text-center space-y-4 ${
+                isOpen ? 'animate-fade-in-up' : ''
+              }`} style={{ animationDelay: '700ms' }}>
+                <div className="flex items-center justify-center space-x-2 text-pink-200">
+                  <Phone size={18} />
+                  <span>(11) 99999-9999</span>
+                </div>
+                <div className="flex items-center justify-center space-x-2 text-pink-200">
+                  <MapPin size={18} />
+                  <span>Taguatinga, DF</span>
+                </div>
+              </div>
             </div>
           </div>
-        )}
+        </div>
       </nav>
 
+      {/* Contact info sidebar for desktop */}
       <div className="hidden lg:flex fixed top-1/2 right-6 transform -translate-y-1/2 flex-col space-y-4 z-40">
         <div className="bg-black/80 backdrop-blur-md text-white p-3 rounded-lg text-sm">
           <div className="flex items-center space-x-2 mb-2">
-            <Phone size={16} className="text-rose-400" />
+            <Phone size={16} className="text-pink-400" />
             <span>(11) 99999-9999</span>
           </div>
           <div className="flex items-center space-x-2">
-            <MapPin size={16} className="text-rose-400" />
+            <MapPin size={16} className="text-pink-400" />
             <span>Taguatinga, DF</span>
           </div>
         </div>

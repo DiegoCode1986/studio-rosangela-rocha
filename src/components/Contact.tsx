@@ -6,7 +6,7 @@ const Contact = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="contato" className="py-20 bg-rose-400">
+    <section id="contato" className="py-20 bg-pink-400">
       <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-16 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
@@ -14,7 +14,7 @@ const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             ENTRE EM CONTATO
           </h2>
-          <div className="w-24 h-1 bg-rose-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-pink-600 mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Entre em contato conosco e agende seu horário. Estamos prontos para cuidar da sua beleza!
           </p>
@@ -24,7 +24,7 @@ const Contact = () => {
           <div className={`transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
-            <div className="bg-rose-600 rounded-lg p-8 text-white">
+            <div className="bg-pink-600 rounded-lg p-8 text-white">
               <h3 className="text-2xl font-bold mb-6 text-center">Informações de Contato</h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -61,7 +61,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="mt-8 pt-8 border-t border-rose-500 text-center">
+              <div className="mt-8 pt-8 border-t border-pink-500 text-center">
                 <p className="font-semibold mb-4">Nos siga nas redes sociais:</p>
                 <div className="flex justify-center space-x-4">
                   <a href="#" className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors">

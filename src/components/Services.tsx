@@ -41,7 +41,7 @@ const Services = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             NOSSOS SERVIÇOS
           </h2>
-          <div className="w-24 h-1 bg-rose-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-pink-600 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Oferecemos uma gama completa de serviços de beleza com profissionais 
             especializados e produtos de alta qualidade
@@ -64,7 +64,7 @@ const Services = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <div className="bg-rose-600 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                  <div className="bg-pink-600 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                     <service.icon size={24} />
                   </div>
                   <h3 className="text-lg font-bold mb-2">{service.title}</h3>
