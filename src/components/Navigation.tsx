@@ -110,7 +110,7 @@ const Navigation = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-white hover:text-pink-400 z-50 relative"
+                className="text-white hover:text-pink-400 z-[60] relative"
               >
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -119,7 +119,7 @@ const Navigation = () => {
         </div>
 
         {/* Full Screen Mobile Menu */}
-        <div className={`md:hidden fixed inset-0 z-40 transition-all duration-500 ${
+        <div className={`md:hidden fixed inset-0 z-[55] transition-all duration-500 ${
           isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}>
           <div className="absolute inset-0 bg-gradient-to-br from-pink-900 via-pink-800 to-rose-900 backdrop-blur-lg">
