@@ -118,9 +118,9 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Full Screen Mobile Menu with slide down animation */}
+        {/* Full Screen Mobile Menu with slide from right animation */}
         <div className={`md:hidden fixed inset-0 z-[60] transition-all duration-700 ease-in-out ${
-          isOpen ? 'translate-y-0' : '-translate-y-full'
+          isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}>
           <div className="absolute inset-0 bg-gradient-to-br from-pink-900 via-pink-800 to-rose-900 backdrop-blur-lg">
             <div className="flex flex-col justify-center items-center h-full px-8">
@@ -138,7 +138,7 @@ const Navigation = () => {
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
                     className={`block text-white hover:text-pink-200 text-2xl font-light transition-all duration-300 transform hover:scale-105 ${
-                      isOpen ? 'animate-fade-in-up' : ''
+                      isOpen ? 'animate-fade-in-left' : ''
                     }`}
                     style={{ animationDelay: `${(index + 1) * 100}ms` }}
                   >
@@ -148,7 +148,7 @@ const Navigation = () => {
               </nav>
               
               <div className={`mt-12 text-center space-y-4 ${
-                isOpen ? 'animate-fade-in-up' : ''
+                isOpen ? 'animate-fade-in-left' : ''
               }`} style={{ animationDelay: '800ms' }}>
                 <div className="flex items-center justify-center space-x-2 text-pink-200">
                   <Phone size={18} />
