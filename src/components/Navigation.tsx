@@ -110,7 +110,7 @@ const Navigation = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-white hover:text-pink-400 z-[60] relative"
+                className="text-white hover:text-pink-400 z-[70] relative"
               >
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -118,9 +118,9 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Full Screen Mobile Menu */}
-        <div className={`md:hidden fixed inset-0 z-[55] transition-all duration-500 ${
-          isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        {/* Full Screen Mobile Menu with slide down animation */}
+        <div className={`md:hidden fixed inset-0 z-[60] transition-all duration-700 ease-in-out ${
+          isOpen ? 'translate-y-0' : '-translate-y-full'
         }`}>
           <div className="absolute inset-0 bg-gradient-to-br from-pink-900 via-pink-800 to-rose-900 backdrop-blur-lg">
             <div className="flex flex-col justify-center items-center h-full px-8">
@@ -140,7 +140,7 @@ const Navigation = () => {
                     className={`block text-white hover:text-pink-200 text-2xl font-light transition-all duration-300 transform hover:scale-105 ${
                       isOpen ? 'animate-fade-in-up' : ''
                     }`}
-                    style={{ animationDelay: `${index * 100}ms` }}
+                    style={{ animationDelay: `${(index + 1) * 100}ms` }}
                   >
                     {item.name}
                   </button>
@@ -149,7 +149,7 @@ const Navigation = () => {
               
               <div className={`mt-12 text-center space-y-4 ${
                 isOpen ? 'animate-fade-in-up' : ''
-              }`} style={{ animationDelay: '700ms' }}>
+              }`} style={{ animationDelay: '800ms' }}>
                 <div className="flex items-center justify-center space-x-2 text-pink-200">
                   <Phone size={18} />
                   <span>(11) 99999-9999</span>
