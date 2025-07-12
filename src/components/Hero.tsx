@@ -28,7 +28,7 @@ const Hero = () => {
           }`}>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4 md:mb-6">
               Studio<br />
-              <span className="text-pink-400">Rosangêla Rocha</span>
+              <span className="text-primary">Rosangêla Rocha</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-6 md:mb-8 text-gray-200 max-w-md">
               Transforme seu visual com nossos especialistas. Cortes, escovas, químicas, 
@@ -36,7 +36,7 @@ const Hero = () => {
             </p>
             <Button 
               onClick={() => scrollToSection('servicos')}
-              className="bg-pink-600 hover:bg-pink-700 text-white px-6 md:px-8 py-2 md:py-3 text-base md:text-lg rounded-md transition-all duration-300 transform hover:scale-105"
+              className="bg-primary hover:bg-primary/90 text-white px-6 md:px-8 py-2 md:py-3 text-base md:text-lg rounded-md transition-all duration-300 transform hover:scale-105"
             >
               NOSSOS SERVIÇOS
             </Button>
@@ -51,7 +51,7 @@ const Hero = () => {
                 alt="Modelo com cabelo elegante"
                 className="rounded-lg shadow-2xl w-full h-[400px] md:h-[500px] object-cover"
               />
-              <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-6 bg-pink-600 text-white p-4 md:p-6 rounded-lg shadow-xl">
+              <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-6 bg-primary text-white p-4 md:p-6 rounded-lg shadow-xl">
                 <h3 className="text-lg md:text-xl font-bold mb-2">Especialistas</h3>
                 <p className="text-sm">Em noivas e debutantes</p>
               </div>

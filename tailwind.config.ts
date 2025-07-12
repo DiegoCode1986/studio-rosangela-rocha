@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -68,7 +67,7 @@ export default {
 					100: '#fdeee1',
 					200: '#fadbc3',
 					300: '#f7c2a0',
-					400: '#f3a07c',
+					400: '#C68D95',
 					500: '#ef7e58',
 					600: '#eb5e34',
 					700: '#d4431a',
@@ -76,16 +75,16 @@ export default {
 					900: '#9c2a1a',
 				},
 				pink: {
-					50: '#fef2f4',
-					100: '#fde6ea',
-					200: '#fbd0d9',
-					300: '#f7aabe',
-					400: '#f275a0',
-					500: '#ea4c89',
-					600: '#e91e63',
-					700: '#c51a5b',
-					800: '#a91a5b',
-					900: '#8e1a4e',
+					50: '#fdf2f8',
+					100: '#fce7f3',
+					200: '#fbcfe8',
+					300: '#f9a8d4',
+					400: '#C68D95',
+					500: '#C68D95',
+					600: '#A6717A',
+					700: '#8B5A63',
+					800: '#70474D',
+					900: '#583A3E',
 				}
 			},
 			borderRadius: {

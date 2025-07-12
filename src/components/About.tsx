@@ -24,7 +24,7 @@ const About = () => {
           }`}>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               BEM-VINDAS AO<br />
-              <span className="text-pink-600">STUDIO ROSANGÊLA ROCHA</span>
+              <span className="text-primary">STUDIO ROSANGÊLA ROCHA</span>
             </h2>
             
             <p className="text-gray-600 mb-6 leading-relaxed">
@@ -40,32 +40,32 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
-                <div className="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Award className="text-pink-600" size={24} />
+                <div className="bg-primary/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Award className="text-primary" size={24} />
                 </div>
                 <h4 className="font-semibold text-gray-900">Qualidade</h4>
                 <p className="text-sm text-gray-600">Produtos premium</p>
               </div>
               
               <div className="text-center">
-                <div className="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Users className="text-pink-600" size={24} />
+                <div className="bg-primary/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Users className="text-primary" size={24} />
                 </div>
                 <h4 className="font-semibold text-gray-900">Experiência</h4>
                 <p className="text-sm text-gray-600">Profissionais capacitados</p>
               </div>
               
               <div className="text-center">
-                <div className="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Heart className="text-pink-600" size={24} />
+                <div className="bg-primary/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Heart className="text-primary" size={24} />
                 </div>
                 <h4 className="font-semibold text-gray-900">Cuidado</h4>
                 <p className="text-sm text-gray-600">Atendimento personalizado</p>
               </div>
               
               <div className="text-center">
-                <div className="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Star className="text-pink-600" size={24} />
+                <div className="bg-primary/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Star className="text-primary" size={24} />
                 </div>
                 <h4 className="font-semibold text-gray-900">Excelência</h4>
                 <p className="text-sm text-gray-600">Resultados únicos</p>
