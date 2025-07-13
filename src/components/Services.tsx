@@ -10,25 +10,25 @@ const Services = () => {
       title: "CORTES E ESCOVAS",
       description: "Cortes modernos e escovas que realçam sua beleza natural",
       icon: Scissors,
-      image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+      image: "/lovable-uploads/corteescovacopia.jpeg"
     },
     {
       title: "MAQUIAGEM",
       description: "Maquiagem profissional para todos os momentos especiais",
       icon: Palette,
-      image: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+      image: "/lovable-uploads/maquiagem.jpeg"
     },
     {
       title: "QUÍMICAS E MECHAS",
       description: "Coloração e mechas com técnicas avançadas e produtos de qualidade",
       icon: Sparkles,
-      image: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      image: "/lovable-uploads/penteado.jpeg"
     },
     {
       title: "PENTEADOS ESPECIAIS",
       description: "Penteados exclusivos para noivas, madrinhas e debutantes",
       icon: Crown,
-      image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
+      image:  "/lovable-uploads/penteadoespeciais.jpeg"
     }
   ];
 
@@ -60,7 +60,7 @@ const Services = () => {
                 <img 
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-84 object-contain transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">

@@ -9,35 +9,20 @@ const Courses = () => {
     {
       title: "Curso de Maquiagem Profissional",
       description: "Aprenda técnicas avançadas de maquiagem para diferentes ocasiões",
-      duration: "40 horas",
-      students: "15 alunos",
-      image: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      highlights: ["Maquiagem social", "Maquiagem para noivas", "Técnicas de contorno"]
+      duration: "2 Dias de curso",
+      students: "carga horária: 16hrs",
+      image: "/lovable-uploads/cursomaquiagem.jpeg",
+      highlights: ["Maquiagem social", "Maquiagem para noivas", "Técnicas de contorno", "E muito Mais..."]
     },
     {
-      title: "Curso de Colorimetria Capilar",
+      title: "Curso de Penteado Profissional",
       description: "Domine a arte da coloração e transforme cabelos com segurança",
-      duration: "30 horas",
-      students: "12 alunos",
-      image: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      highlights: ["Teoria das cores", "Técnicas de mechas", "Correção de cor"]
+      duration: "2 Dias de curso",
+      students: "carga horária: 16hrs",
+      image: "/lovable-uploads/cursopenteado2.jpeg",
+      highlights: ["Teoria das cores", "Técnicas de mechas", "Correção de cor", "E muito Mais..."]
     },
-    {
-      title: "Curso de Penteados para Noivas",
-      description: "Especialize-se em penteados elegantes para momentos especiais",
-      duration: "25 horas",
-      students: "10 alunos",
-      image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      highlights: ["Penteados clássicos", "Técnicas modernas", "Uso de acessórios"]
-    },
-    {
-      title: "Curso de Manicure e Pedicure",
-      description: "Técnicas profissionais para cuidados completos das unhas",
-      duration: "20 horas",
-      students: "18 alunos",
-      image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      highlights: ["Cuidados básicos", "Esmaltação", "Arte em unhas"]
-    }
+   
   ];
 
   return (
@@ -64,11 +49,11 @@ const Courses = () => {
               }`}
             >
               <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="relative overflow-hidden h-48">
+                <div className="relative overflow-hidden h-68">
                   <img 
                     src={course.image}
                     alt={course.title}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent"></div>
                   <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
@@ -106,10 +91,7 @@ const Courses = () => {
                     </ul>
                   </div>
                   
-                  <button className="w-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
-                    <GraduationCap size={18} className="mr-2" />
-                    Saiba Mais
-                  </button>
+                  
                 </div>
               </div>
             </div>
@@ -126,9 +108,9 @@ const Courses = () => {
             <p className="text-gray-600 mb-6">
               Todos os nossos cursos oferecem certificado de conclusão reconhecido no mercado de trabalho
             </p>
-            <button className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
+           <a href="https://api.whatsapp.com/send/?phone=556182128746&text=Ol%C3%A1%21+Gostaria+de+agendar+um+hor%C3%A1rio+no+Ayesha+Hair+Salon.&type=phone_number&app_absent=0"> <button  className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
               Entre em Contato para Mais Informações
-            </button>
+            </button></a>
           </div>
         </div>
       </div>

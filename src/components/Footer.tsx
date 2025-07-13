@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-primary">Rosangêla Rocha</h3>
+            <h3 className="text-2xl font-bold mb-4 text-primary">Rosângela Rocha</h3>
             <p className="text-gray-300 mb-4">
               Salão de beleza especializado em transformar seu visual com carinho e profissionalismo.
             </p>
@@ -91,7 +91,7 @@ const Footer = () => {
             <div className="space-y-3 text-gray-300">
               <div className="flex items-center">
                 <Phone size={16} className="mr-2 text-primary" />
-                <span>(11) 99999-9999</span>
+                <span>(61) 98212-8746 </span>
               </div>
               <div className="flex items-center">
                 <MapPin size={16} className="mr-2 text-primary" />
@@ -114,7 +114,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-300 flex items-center justify-center">
             © 2025 Studio Rosangela Rocha. Feito com 
-            <Heart className="mx-1 text-primary" size={16} /> 
+            <Heart className="mx-1 text-primary" size={25} /> 
             para você.
           </p>
         </div>

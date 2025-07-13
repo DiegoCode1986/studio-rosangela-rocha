@@ -2,8 +2,8 @@
 import { MessageCircle } from 'lucide-react';
 
 const WhatsAppButton = () => {
-  const phoneNumber = "5511999999999"; // Substitua pelo número real do salão
-  const message = "Olá! Gostaria de agendar um horário no Ayesha Hair Salon.";
+  const phoneNumber = "556182128746"; // Substitua pelo número real do salão
+  const message = "Olá! Gostaria de agendar um horário no Estudio Rosângela Rocha";
   
   const handleWhatsAppClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

@@ -14,8 +14,8 @@ const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             ENTRE EM CONTATO
           </h2>
-          <div className="w-24 h-1 bg-primary-foreground mx-auto mb-6"></div>
-          <p className="text-white/80 max-w-2xl mx-auto">
+          <div className="w-24 h-1  bg-primary-foreground mx-auto mb-10"></div>
+          <p className="text-white/90 font-bold max-w-53xl mx-auto">
             Entre em contato conosco e agende seu horário. Estamos prontos para cuidar da sua beleza!
           </p>
         </div>
@@ -31,16 +31,16 @@ const Contact = () => {
                 <div className="flex items-center">
                   <Phone className="mr-4 flex-shrink-0" size={24} />
                   <div>
-                    <p className="font-semibold">Telefone</p>
-                    <p>(11) 99999-9999</p>
+                    <p className=" font-semibold">Telefone</p>
+                    <p className=" font-bold ">(61) 98212-8746 </p>
                   </div>
                 </div>
                 
                 <div className="flex items-center">
                   <MapPin className="mr-4 flex-shrink-0" size={24} />
                   <div>
-                    <p className="font-semibold">Endereço</p>
-                    <p>St. L Norte QNL 22 via 29 lote 42 loja 01 - Taguatinga, Brasília - DF, 72161-204<br />Taguatinga -DF</p>
+                    <p className=" font-bold ">Endereço</p>
+                    <p className=" font-bold ">St. L Norte QNL 22 via 29 lote 42 loja 01 - Taguatinga, Brasília - DF, 72161-204<br />Taguatinga -DF</p>
                   </div>
                 </div>
                 
@@ -48,7 +48,7 @@ const Contact = () => {
                   <Clock className="mr-4 flex-shrink-0" size={24} />
                   <div>
                     <p className="font-semibold">Horário de Funcionamento</p>
-                    <p>Segunda a Sexta: 9h às 19h<br />Sábado: 8h às 17h</p>
+                    <p className=" font-bold ">Segunda a Sexta: 9h às 19h<br />Sábado: 8h às 17h</p>
                   </div>
                 </div>
                 
@@ -56,7 +56,7 @@ const Contact = () => {
                   <Mail className="mr-4 flex-shrink-0" size={24} />
                   <div>
                     <p className="font-semibold">E-mail</p>
-                    <p>contato@rosangelarocha.com.br</p>
+                    <p className=" font-bold ">contato@rosangelarocha.com.br</p>
                   </div>
                 </div>
               </div>
@@ -64,7 +64,7 @@ const Contact = () => {
               <div className="mt-8 pt-8 border-t border-primary/20 text-center">
                 <p className="font-semibold mb-4">Nos siga nas redes sociais:</p>
                 <div className="flex justify-center space-x-4">
-                  <a href="#" className="bg-primary/20 p-2 rounded-full hover:bg-primary/30 transition-colors">
+                  <a href="https://www.instagram.com/rosangelarochamakeup?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="bg-primary/20 p-2 rounded-full hover:bg-primary/30 transition-colors">
                     <Instagram size={20} />
                   </a>
                   <a href="#" className="bg-primary/20 p-2 rounded-full hover:bg-primary/30 transition-colors">

@@ -16,44 +16,74 @@ const Gallery = () => {
 
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Corte de cabelo moderno",
-      category: "Cortes"
+      src: "/lovable-uploads/galeria/1.jpeg",
+      alt: "",
+      category: ""
     },
     {
-      src: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Maquiagem profissional",
-      category: "Maquiagem"
+      src: "/lovable-uploads/galeria/noiva2.jpeg",
+      alt: "",
+      category: ""
     },
     {
-      src: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Coloração capilar",
-      category: "Coloração"
+      src: "/lovable-uploads/galeria/noiva3.jpeg",
+      alt: "",
+      category: ""
     },
     {
-      src: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Penteado de noiva",
-      category: "Penteados"
+      src: "/lovable-uploads/galeria/penteado1.jpeg",
+      alt: "",
+      category: ""
     },
     {
-      src: "https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Nail art",
-      category: "Unhas"
+      src: "/lovable-uploads/galeria/noiva5.jpeg",
+      alt: "",
+      category: ""
     },
     {
-      src: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Sobrancelhas",
-      category: "Sobrancelhas"
+      src: "/lovable-uploads/galeria/penteado2.jpeg",
+      alt: "",
+      category: ""
     },
     {
-      src: "https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Escova modeladora",
-      category: "Escovas"
+      src: "/lovable-uploads/galeria/noiva6.jpeg",
+      alt: "",
+      category: ""
     },
     {
-      src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Maquiagem para eventos",
-      category: "Maquiagem"
+      src: "/lovable-uploads/galeria/penteado4.jpeg",
+      alt: "",
+      category: ""
+    },
+      {
+      src: "/lovable-uploads/galeria/penteado5.jpeg",
+      alt: "",
+      category: ""
+    },
+      {
+      src: "/lovable-uploads/galeria/penteado6.jpeg",
+      alt: "",
+      category: ""
+    },
+      {
+      src: "/lovable-uploads/galeria/penteado7.jpeg",
+      alt: "",
+      category: ""
+    },
+      {
+      src: "/lovable-uploads/galeria/penteado8.jpeg",
+      alt: "",
+      category: ""
+    },
+      {
+      src: "/lovable-uploads/galeria/penteado9.jpeg",
+      alt: "",
+      category: ""
+    },
+      {
+      src: "/lovable-uploads/galeria/penteado10.jpeg",
+      alt: "",
+      category: ""
     }
   ];
 
@@ -100,7 +130,7 @@ const Gallery = () => {
                       <img
                         src={image.src}
                         alt={image.alt}
-                        className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                        className="w-full h-80 object-contain transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       

@@ -7,28 +7,25 @@ const Team = () => {
 
   const team = [
     {
-      name: "Ana Martins",
-      role: "Especialista em Noivas",
-      image: "/lovable-uploads/funcionaria1.jpg",
-      description: "10 anos de experiência em penteados e maquiagem para noivas"
+      name: "Rosângela Rocha",
+      role: "Cabeleireira e Empresária",
+      image: "/lovable-uploads/galeria/rosangela.jpeg",
+      description: "37 anos de carreira,proprietária do Salão Rosangêla Rocha; especialista no atendimento a Noivas debutantes; desde 2005 tornou-se uma profissional renomada com um currículo bem completo em sua área"
+    
     },
     {
-      name: "Beatriz Silva",
-      role: "Colorista Especialista",
-      image: "/lovable-uploads/funcionaria2.jpg",
-      description: "Especialista em coloração e técnicas de mechas modernas"
+      name: "Yulle",
+      role: "Manicure",
+      image: "/lovable-uploads/galeria/manicure.jpeg",
+      description: "Manicure com experiência de mais de 20 anos, e com especialidade em SPA dos pés"
     },
-    {
-      name: "Carla Rodrigues",
-      role: "Cabeleireira Senior",
-      image: "/lovable-uploads/funcionaria3.jpg",
-      description: "Cortes modernos e tratamentos capilares avançados"
-    }
+    
+   
   ];
 
   return (
     <section id="equipe" className="py-20 bg-primary">
-      <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div ref={ref} className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-16 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
@@ -65,14 +62,7 @@ const Team = () => {
                   <p className="text-primary font-semibold mb-3">{member.role}</p>
                   <p className="text-gray-600 text-sm mb-4">{member.description}</p>
                   
-                  <div className="flex justify-center space-x-4">
-                    <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-300">
-                      <Instagram size={20} />
-                    </a>
-                    <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-300">
-                      <Facebook size={20} />
-                    </a>
-                  </div>
+                  
                 </div>
               </div>
             </div>
