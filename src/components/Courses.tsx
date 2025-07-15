@@ -12,15 +12,15 @@ const Courses = () => {
       duration: "2 Dias de curso",
       students: "carga horária: 16hrs",
       image: "/lovable-uploads/cursomaquiagem.jpeg",
-      highlights: ["Maquiagem social", "Maquiagem para noivas", "Técnicas de contorno", "E muito Mais..."]
+      highlights: ["Maquiagem social", "Maquiagem para noivas", "Técnicas de contorno","Pele", "E muito Mais..."]
     },
     {
       title: "Curso de Penteado Profissional",
-      description: "Domine a arte da coloração e transforme cabelos com segurança",
+      description: "Domine a arte de pentear com excelência e se torne um (a) grande penteadista. ",
       duration: "2 Dias de curso",
       students: "carga horária: 16hrs",
       image: "/lovable-uploads/cursopenteado2.jpeg",
-      highlights: ["Teoria das cores", "Técnicas de mechas", "Correção de cor", "E muito Mais..."]
+      highlights: ["Preparação","Intrudução de Técnicas Russa em alguns penteados","semi preso","Onda de Glamur","Penteados Clássicos", "Espojados", "Diferentes Técnicas de ondas e Cachos", "Tranças" ,"Coques","Dicas de Produtos e ferramentas", "e muitos mais..."]
     },
    
   ];

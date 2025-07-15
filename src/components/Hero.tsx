@@ -51,8 +51,9 @@ const Hero = () => {
                 alt="Modelo com cabelo elegante"
                 className="rounded-lg shadow-2xl w-full h-[400px] md:h-[500px] object-cover"
               />
-              <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-6 bg-primary text-white p-4 md:p-6 rounded-lg shadow-xl">
-                <h3 className="text-lg md:text-xl font-bold mb-2">Especialistas</h3>
+              <div className="absolute -bottom-3 md:-bottom-6 -left-4 md:-left-6 bg-primary text-white p-4 md:p-6 rounded-lg shadow-xl">
+                  <h3 className="text-lg md:text-xl font-bold mb-">Rosângela Rocha</h3> <br></br>
+                <h3 className="text-lg md:text-xl font-bold mb-">Especialista</h3>
                 <p className="text-sm">Em noivas e debutantes</p>
               </div>
             </div>

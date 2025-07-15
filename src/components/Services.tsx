@@ -10,26 +10,27 @@ const Services = () => {
       title: "CORTES E ESCOVAS",
       description: "Cortes modernos e escovas que realçam sua beleza natural",
       icon: Scissors,
-      image: "/lovable-uploads/corteescovacopia.jpeg"
+      image: "/lovable-uploads/galeria/corteescova.jpeg"
     },
     {
       title: "MAQUIAGEM",
       description: "Maquiagem profissional para todos os momentos especiais",
       icon: Palette,
-      image: "/lovable-uploads/maquiagem.jpeg"
+      image: "/lovable-uploads/galeria/maquiagem.jpeg"
     },
-    {
-      title: "QUÍMICAS E MECHAS",
-      description: "Coloração e mechas com técnicas avançadas e produtos de qualidade",
-      icon: Sparkles,
-      image: "/lovable-uploads/penteado.jpeg"
-    },
+   
     {
       title: "PENTEADOS ESPECIAIS",
       description: "Penteados exclusivos para noivas, madrinhas e debutantes",
       icon: Crown,
-      image:  "/lovable-uploads/penteadoespeciais.jpeg"
-    }
+      image:  "/lovable-uploads/galeria/penteado.jpeg"
+    },
+     {
+      title: "QUÍMICAS E MECHAS",
+      description: "Coloração e mechas com técnicas avançadas e produtos de qualidade",
+      icon: Sparkles,
+      image: "/lovable-uploads/galeria/mechas.jpeg"
+    },
   ];
 
   return (
@@ -60,7 +61,7 @@ const Services = () => {
                 <img 
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-84 object-contain transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-74 object-contain transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -81,7 +82,8 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
               <h4 className="text-xl font-bold text-gray-900 mb-2">Unhas</h4>
-              <p className="text-gray-600">Manicure e pedicure com esmaltação profissional</p>
+              <p className="text-gray-600">Manicure e pedicure com esmaltação em Gel e Nail Design profissional</p>
+              
             </div>
             <div>
               <h4 className="text-xl font-bold text-gray-900 mb-2">Sobrancelhas</h4>
@@ -89,7 +91,7 @@ const Services = () => {
             </div>
             <div>
               <h4 className="text-xl font-bold text-gray-900 mb-2">Tratamentos</h4>
-              <p className="text-gray-600">Hidratação e reconstrução capilar</p>
+              <p className="text-gray-600">Hidratação e reconstrução capilar e ozônio terapia</p>
             </div>
           </div>
         </div>

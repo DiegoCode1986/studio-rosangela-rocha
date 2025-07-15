@@ -32,7 +32,7 @@ const Contact = () => {
                   <Phone className="mr-4 flex-shrink-0" size={24} />
                   <div>
                     <p className=" font-semibold">Telefone</p>
-                    <p className=" font-bold ">(61) 98212-8746 </p>
+                    <p className=" font-bold ">(61) 99402-5566 </p>
                   </div>
                 </div>
                 
@@ -48,7 +48,7 @@ const Contact = () => {
                   <Clock className="mr-4 flex-shrink-0" size={24} />
                   <div>
                     <p className="font-semibold">Horário de Funcionamento</p>
-                    <p className=" font-bold ">Segunda a Sexta: 9h às 19h<br />Sábado: 8h às 17h</p>
+                    <p className=" font-bold ">Terça a Sábado: 9h às 19h</p>
                   </div>
                 </div>
                 
@@ -67,7 +67,7 @@ const Contact = () => {
                   <a href="https://www.instagram.com/rosangelarochamakeup?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="bg-primary/20 p-2 rounded-full hover:bg-primary/30 transition-colors">
                     <Instagram size={20} />
                   </a>
-                  <a href="#" className="bg-primary/20 p-2 rounded-full hover:bg-primary/30 transition-colors">
+                  <a href="https://www.facebook.com/rosangelaalencar.rochadias?mibextid=wwXIfr&rdid=LBhzGyEoyyBu4iwM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1FpeN1EeJw%2F%3Fmibextid%3DwwXIfr#" className="bg-primary/20 p-2 rounded-full hover:bg-primary/30 transition-colors">
                     <Facebook size={20} />
                   </a>
                 </div>

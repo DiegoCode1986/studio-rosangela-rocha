@@ -152,7 +152,7 @@ const Navigation = () => {
               }`} style={{ animationDelay: '800ms' }}>
                 <div className="flex items-center justify-center space-x-2 text-pink-200">
                   <Phone size={18} />
-                  <span>(61) 98212-8746 </span>
+                  <span>(61) 99402-5566 </span>
                 </div>
                 <div className="flex items-center justify-center space-x-2 text-pink-200">
                   <MapPin size={18} />
@@ -169,7 +169,7 @@ const Navigation = () => {
         <div className="bg-black/80 backdrop-blur-md text-white p-3 rounded-lg text-sm">
           <div className="flex items-center space-x-2 mb-2">
             <Phone size={16} className="text-pink-400" />
-            <span>(61) 98212-8746 </span>
+            <span>(61) 99402-5566 </span>
           </div>
           <div className="flex items-center space-x-2">
             <MapPin size={16} className="text-pink-400" />

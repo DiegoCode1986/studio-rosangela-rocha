@@ -22,7 +22,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/rosangelarochamakeup?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-gray-300 hover:text-primary transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/rosangelaalencar.rochadias?mibextid=wwXIfr&rdid=LBhzGyEoyyBu4iwM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1FpeN1EeJw%2F%3Fmibextid%3DwwXIfr#" className="text-gray-300 hover:text-primary transition-colors">
                 <Facebook size={20} />
               </a>
             </div>
@@ -91,7 +91,7 @@ const Footer = () => {
             <div className="space-y-3 text-gray-300">
               <div className="flex items-center">
                 <Phone size={16} className="mr-2 text-primary" />
-                <span>(61) 98212-8746 </span>
+                <span>(61) 99402-5566</span>
               </div>
               <div className="flex items-center">
                 <MapPin size={16} className="mr-2 text-primary" />
