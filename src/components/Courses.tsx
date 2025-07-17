@@ -20,7 +20,7 @@ const Courses = () => {
       duration: "2 Dias de curso",
       students: "carga horária: 16hrs",
       image: "/lovable-uploads/cursopenteado2.jpeg",
-      highlights: ["Preparação","Intrudução de Técnicas Russa em alguns penteados","semi preso","Onda de Glamur","Penteados Clássicos", "Espojados", "Diferentes Técnicas de ondas e Cachos", "Tranças" ,"Coques","Dicas de Produtos e ferramentas", "e muitos mais..."]
+      highlights: ["Preparação","Introdução de Técnicas Russa em alguns penteados","semi preso","Onda de Glamur","Penteados Clássicos", "Espojados", "Diferentes Técnicas de ondas e Cachos", "Tranças" ,"Coques","Dicas de Produtos e ferramentas", "e muitos mais..."]
     },
    
   ];

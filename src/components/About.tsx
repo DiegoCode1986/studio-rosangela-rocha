@@ -13,9 +13,9 @@ const About = () => {
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
             <img 
-              src="\lovable-uploads\cadeiras.jpg"
+              src="\lovable-uploads\espaco.jpeg"
               alt="Interior do salão"
-              className="rounded-lg shadow-xl w-full h-[400px] object-cover"
+              className="rounded-lg shadow-xl w-[400vh] h-[300px] object-cover"
             />
           </div>
           
