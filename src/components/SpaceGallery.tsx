@@ -1,5 +1,12 @@
 
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { useState } from 'react';
 import { X, ZoomIn } from 'lucide-react';
 
@@ -51,36 +58,50 @@ const SpaceGallery = () => {
             </p>
           </div>
 
-          <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-1000 delay-300 ${
+          <div className={`transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
-            {spaceImages.map((image, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500">
-                <div className="aspect-video overflow-hidden">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <span className="inline-block bg-primary px-3 py-1 rounded-full text-xs font-semibold mb-2">
-                    {image.category}
-                  </span>
-                  <h4 className="font-semibold text-lg">{image.alt}</h4>
-                </div>
-                
-                <button
-                  onClick={() => openLightbox(image.src)}
-                  className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white/30"
-                >
-                  <ZoomIn size={18} className="text-white" />
-                </button>
-              </div>
-            ))}
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {spaceImages.map((image, index) => (
+                  <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                    <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500">
+                      <div className="aspect-video overflow-hidden">
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                      </div>
+                      
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      
+                      <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <span className="inline-block bg-primary px-3 py-1 rounded-full text-xs font-semibold mb-2">
+                          {image.category}
+                        </span>
+                        <h4 className="font-semibold text-lg">{image.alt}</h4>
+                      </div>
+                      
+                      <button
+                        onClick={() => openLightbox(image.src)}
+                        className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white/30"
+                      >
+                        <ZoomIn size={18} className="text-white" />
+                      </button>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4 bg-primary border-primary hover:bg-primary/90 text-white" />
+              <CarouselNext className="right-4 bg-primary border-primary hover:bg-primary/90 text-white" />
+            </Carousel>
           </div>
 
           {/* Grid adicional com imagens menores */}
