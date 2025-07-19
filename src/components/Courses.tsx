@@ -40,7 +40,7 @@ const Courses = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 object-contain">
           {courses.map((course, index) => (
             <div 
               key={index}
@@ -49,7 +49,7 @@ const Courses = () => {
               }`}
             >
               <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="relative overflow-hidden h-68">
+                <div className="relative overflow-hidden h-58">
                   <img 
                     src={course.image}
                     alt={course.title}

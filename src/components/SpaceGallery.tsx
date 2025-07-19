@@ -16,20 +16,42 @@ const SpaceGallery = () => {
 
   const spaceImages = [
     {
-      src: "/lovable-uploads/espaco.jpeg",
+      src: "/lovable-uploads/galeria-espaco/espaco.jpeg",
       alt: "Interior principal do salão",
       category: "Ambiente Principal"
     },
     {
-      src: "/lovable-uploads/cadeiras.jpg",
-      alt: "Área de atendimento com poltronas",
-      category: "Área de Atendimento"
+      src: "/lovable-uploads/galeria-espaco/espaco1.jpeg",
+     
     },
     {
-      src: "/lovable-uploads/fotoo.jpg",
-      alt: "Vista geral do salão",
-      category: "Vista Geral"
-    }
+      src: "/lovable-uploads/galeria-espaco/espaco2.jpeg",
+     
+    },
+    {
+      src: "/lovable-uploads/galeria-espaco/espaco3.jpeg",
+     
+    },
+    {
+      src: "/lovable-uploads/galeria-espaco/espaco4.jpeg",
+     
+    },
+    {
+      src: "/lovable-uploads/galeria-espaco/espaco5.jpeg",
+      
+    },
+    {
+      src: "/lovable-uploads/galeria-espaco/espaco6.jpeg",
+      
+    },
+    {
+      src: "/lovable-uploads/galeria-espaco/espaco7.jpeg",
+     
+    },
+    {
+      src: "/lovable-uploads/galeria-espaco/espaco8.jpeg",
+      
+    },
   ];
 
   const openLightbox = (imageSrc: string) => {
@@ -114,7 +136,7 @@ const SpaceGallery = () => {
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 cursor-pointer"
+                    className="w-full h-50 object-cover transition-transform duration-300 group-hover:scale-110 cursor-pointer"
                     onClick={() => openLightbox(image.src)}
                   />
                 </div>
