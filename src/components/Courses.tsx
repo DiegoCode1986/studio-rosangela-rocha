@@ -16,7 +16,7 @@ const Courses = () => {
     },
     {
       title: "Curso de Penteado Profissional",
-      description: "Domine a arte de pentear com excelência e se torne um (a) grande penteadista. ",
+      description: "Domine a arte de pentear com excelência e torne-se um (a) grande penteadista. ",
       duration: "2 Dias de curso",
       students: "carga horária: 16hrs",
       image: "/lovable-uploads/cursopenteado2.jpeg",
