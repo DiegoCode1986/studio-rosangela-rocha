@@ -108,7 +108,7 @@ const Courses = () => {
             <p className="text-gray-600 mb-6">
               Todos os nossos cursos oferecem certificado de conclusão reconhecido no mercado de trabalho
             </p>
-           <a href="https://api.whatsapp.com/send/?phone=556182128746&text=Ol%C3%A1%21+Gostaria+de+agendar+um+hor%C3%A1rio+no+Ayesha+Hair+Salon.&type=phone_number&app_absent=0"> <button  className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
+           <a href="https://api.whatsapp.com/send/?phone=5561994025566&text=Ol%C3%A1%21+Gostaria+de+agendar+um+hor%C3%A1rio+no+Estudio+Rosangela+Rocha.&type=phone_number&app_absent=0"> <button  className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
               Entre em Contato para Mais Informações
             </button></a>
           </div>
