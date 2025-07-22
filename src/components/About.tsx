@@ -28,9 +28,9 @@ const About = () => {
             </h2>
             
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Salão de beleza especializado no atendimento a noivas, madrinhas, debutantes,Nail Desing, Lash Desing, e muitos mais. 
-              Aqui você pode contar com excelentes profissionais treinados e capacitados em cortes, 
-              escovas, químicas, mechas, unhas, sobrancelhas, maquiagens e penteados.
+              Salão de beleza especializado no atendimento a Noivas, Madrinhas,Debutantese muitos mais. 
+              Aqui você pode contar com excelentes profissionais treinados e capacitados em Cortes, 
+              Escovas, Químicas, Mechas, Unhas, Nail Desing, Lash Desing, sobrancelhas, Maquiagens e Penteados.
             </p>
             
             <p className="text-gray-600 mb-8 leading-relaxed">
