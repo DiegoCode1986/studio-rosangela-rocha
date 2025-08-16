@@ -22,35 +22,43 @@ const SpaceGallery = () => {
     },
     {
       src: "/lovable-uploads/galeria-espaco/espaco1.jpeg",
-     
+      alt: "Lavatório do salão",
+      category: "Detalhes"
     },
     {
       src: "/lovable-uploads/galeria-espaco/espaco2.jpeg",
-     
+      alt: "Área de manicure",
+      category: "Detalhes"
     },
     {
       src: "/lovable-uploads/galeria-espaco/espaco3.jpeg",
-     
+      alt: "Poltronas de espera",
+      category: "Ambiente Principal"
     },
     {
       src: "/lovable-uploads/galeria-espaco/espaco4.jpeg",
-     
+      alt: "Decoração e plantas",
+      category: "Decoração"
     },
     {
       src: "/lovable-uploads/galeria-espaco/espaco5.jpeg",
-      
+      alt: "Vista geral do espaço",
+      category: "Ambiente Principal"
     },
     {
       src: "/lovable-uploads/galeria-espaco/espaco6.jpeg",
-      
+      alt: "Bancada de trabalho",
+      category: "Detalhes"
     },
     {
       src: "/lovable-uploads/galeria-espaco/espaco7.jpeg",
-     
+      alt: "Cadeira de cabeleireiro",
+      category: "Detalhes"
     },
     {
       src: "/lovable-uploads/galeria-espaco/espaco8.jpeg",
-      
+      alt: "Fachada do salão",
+      category: "Externo"
     },
   ];
 
@@ -145,6 +153,20 @@ const SpaceGallery = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Link para o Tour Virtual */}
+          <div className={`mt-12 text-center transition-all duration-1000 delay-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}>
+            <a 
+              href="https://www.google.com/local/place/fid/0x935bcdc9bd9bdf09:0x2b92ba03dc5d0d9f/photosphere?iu=https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrIRmrGvLIQbn3--6A4pEUFByW-KREkUDcJkVrStI0Afm2YpJlyqKshAh07b-fqRkqgMI2GOZVsaWGrLx7a3QAd6KYIkBfmUMZQ1hw2qBaXEEvvr9g18Lf9glHdpMnW7gzQxuPkrIj6qcBb%3Dw160-h106-k-no-pi0-ya289.13-ro-0-fo100&ik=CAoSHENJQUJJaERIU2ZIcWRoTGU0NW5oQ24zd29uQ2s%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-primary text-white font-bold py-3 px-8 rounded-full hover:bg-primary/90 transition-transform duration-300 hover:scale-105 shadow-lg"
+            >
+              Faça um tour pelo salão
+            </a>
           </div>
         </div>
       </section>
